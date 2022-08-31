@@ -90,6 +90,8 @@ export default {
       this.file = event.target.files[0];
     },
     async Upload() {
+      this.urlImage = "";
+      this.error = "";
       this.flagProgress = true;
       let formData = new FormData();
       formData.append("file", this.file);
